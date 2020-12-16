@@ -2,7 +2,7 @@
 <!-- 底部内部的东西都会展示同一个图片,同一个文字 -->
     <div class="tab-bar-item" @click="itemClick">
       <!-- 插槽最好用div包裹起来。插槽会被替换成相对应的标签内容,所以不建议在插槽上添加属性 -->
-      <div v-if="isActive"><slot name="item-icon"></slot></div>
+      <div v-if="!isActive"><slot name="item-icon"></slot></div>
       
       <div v-else ><slot name="item-icon-active"></slot></div>
       
