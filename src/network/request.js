@@ -4,7 +4,7 @@ import axios from 'axios'
 export function request(config) {
   //1.创建对应axios实例,进行配置
   const request = axios.create({
-    baseURL: 'http://123.207.32.32:8000',
+    baseURL: 'http://152.136.185.210:7878/api/m5',
     timeout: 5000
   })
   //2.axios拦截器  拦截一些不符合服务器要求的信息进行处理/发送网络请求时加缓存加载图标/网络请求携带某些信息(登录tocken)

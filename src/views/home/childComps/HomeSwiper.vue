@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="HomeSwiper">
     <Swiper>
       <SwiperItem v-for="(item,key) in banners" :key="key">
         <a :href="item.link">
@@ -30,5 +30,7 @@ export default {
 </script>
 
 <style scoped>
-  
+  .HomeSwiper img{
+    width: 100%;
+  }
 </style>
